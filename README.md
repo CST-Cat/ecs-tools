@@ -20,7 +20,7 @@
 |---|---|---|
 | 软件 | `sysbench`、`zstd`、`openssl`、`fio`、`iperf3`、`nexttrace-tiny`、`ping`、`npb`、`stream` | 与上游 `tools/lock.json` 中的工具名一致（npb-ep / npb-ft 合并到 `npb`） |
 | 版本 | 上游 tag 或版本号（如 `v1.5.7`、`3.42`） | stream 上游无版本化发布，使用 `current` 快照 |
-| 平台-架构 | `linux-amd64`、`linux-arm64`、`freebsd-amd64`、`freebsd-arm64`、`all` | 只收集 Linux 与 FreeBSD 的 amd64 / arm64；源码包、校验和等无平台标记的文件归入 `all` |
+| 平台-架构 | `linux-amd64`、`linux-arm64`、`linux-s390x`、`linux-ppc64le`、`freebsd-amd64`、`freebsd-arm64`、`all` | 只收集 Linux 与 FreeBSD 的 amd64 / arm64 / s390x（IBM Z）/ ppc64le（IBM POWER）；源码包、校验和等无平台标记的文件归入 `all` |
 | 类型 | `source` / `binary` / `deb` / `rpm` / `msi` / `meta` | `meta` 为校验和与签名文件 |
 
 示例：
@@ -49,7 +49,7 @@ ping/20250605/all/source/iputils-20250605.tar.gz
 | npb（npb-ep / npb-ft） | [NASA NPB](https://www.nas.nasa.gov/software/npb.html) | 固定 URL 列表 | 已知 3.3.1 ~ 3.4.4 |
 | stream | [Virginia CS](https://www.cs.virginia.edu/stream/) | 固定 URL 列表 | 当前源码快照 |
 
-全局默认只收 Linux / FreeBSD 的 amd64 与 arm64。上游仓库过大时只收集近几年版本（`recent_years`）；调整范围请编辑 [config/tools.json](config/tools.json)（如删除某工具的 `recent_years` 即恢复全量收集）。
+全局默认只收 Linux / FreeBSD 的 amd64、arm64、s390x、ppc64le。上游仓库过大时只收集近几年版本（`recent_years`）；调整范围请编辑 [config/tools.json](config/tools.json)（如删除某工具的 `recent_years` 即恢复全量收集）。
 
 ## 自动化
 

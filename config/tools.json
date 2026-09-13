@@ -7,7 +7,7 @@
   },
   "defaults": {
     "platforms": ["linux", "freebsd"],
-    "architectures": ["amd64", "arm64"],
+    "architectures": ["amd64", "arm64", "s390x", "ppc64le"],
     "include_prereleases": false,
     "fallback_tags": true,
     "max_asset_mb": 200
