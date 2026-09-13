@@ -1,0 +1,74 @@
+{
+  "schema": "ecs-tools.config/v1",
+  "upstream_project": {
+    "repo": "CST-Cat/ecs",
+    "ref": "main",
+    "lock_path": "tools/lock.json"
+  },
+  "defaults": {
+    "platforms": ["linux", "freebsd"],
+    "architectures": ["amd64", "arm64"],
+    "include_prereleases": false,
+    "fallback_tags": true,
+    "max_asset_mb": 200
+  },
+  "aliases": {
+    "npb-ep": "npb",
+    "npb-ft": "npb"
+  },
+  "ignore_tools": [],
+  "tools": {
+    "sysbench": {
+      "repo": "akopytov/sysbench"
+    },
+    "zstd": {
+      "repo": "facebook/zstd"
+    },
+    "openssl": {
+      "repo": "openssl/openssl",
+      "version_glob": "^openssl-[3-9]\\.",
+      "recent_years": 2
+    },
+    "fio": {
+      "type": "url_index",
+      "index_url": "https://brick.kernel.dk/snaps/",
+      "link_regex": "^fio-[0-9][0-9.]*\\.tar\\.gz$",
+      "version_regex": "^fio-([0-9][0-9.]*)\\.tar\\.gz$",
+      "keep_latest": 45,
+      "comment": "单个源码包约 7.4MB，历史全量约 1.5GB，故只收近三年（约 45 个版本）"
+    },
+    "iperf3": {
+      "repo": "esnet/iperf"
+    },
+    "nexttrace-tiny": {
+      "repo": "nxtrace/NTrace-core",
+      "asset_include": "^nexttrace-tiny_",
+      "recent_years": 2
+    },
+    "ping": {
+      "repo": "iputils/iputils"
+    },
+    "npb": {
+      "type": "url_list",
+      "provides": ["npb-ep", "npb-ft"],
+      "urls": [
+        { "version": "3.4.4", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.4.tar.gz" },
+        { "version": "3.4.3", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.3.tar.gz" },
+        { "version": "3.4.2", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.2.tar.gz" },
+        { "version": "3.4.1", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.1.tar.gz" },
+        { "version": "3.4", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.tar.gz" },
+        { "version": "3.3.1", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.3.1.tar.gz" }
+      ]
+    },
+    "stream": {
+      "type": "url_list",
+      "version": "current",
+      "comment": "stream 上游没有版本化发布，仅收集当前源码快照",
+      "urls": [
+        { "url": "https://www.cs.virginia.edu/stream/FTP/Code/stream.c" },
+        { "url": "https://www.cs.virginia.edu/stream/FTP/Code/mysecond.c" },
+        { "url": "https://www.cs.virginia.edu/stream/FTP/Code/HISTORY.txt" }
+      ]
+    }
+  }
+}

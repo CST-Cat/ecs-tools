@@ -1,0 +1,48 @@
+name: collect
+
+on:
+  schedule:
+    - cron: "23 2 * * *" # 每天 02:23 UTC（北京时间 10:23）
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "只收集指定软件（逗号分隔，留空 = 全部）"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect artifacts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COLLECT_ONLY: ${{ inputs.only }}
+        run: python3 scripts/collect.py --config config/tools.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "ecs-tools-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "没有新增内容"
+            exit 0
+          fi
+          git commit -m "collect: 同步第三方软件产物 (${{ github.event_name }})"
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase --autostash || true
+            sleep 15
+          done
+          exit 1
