@@ -41,15 +41,15 @@ ping/20250605/all/source/iputils-20250605.tar.gz
 |---|---|---|---|
 | sysbench | [akopytov/sysbench](https://github.com/akopytov/sysbench) | GitHub Releases | 全部版本（release 无资产时回退 tag 源码包） |
 | zstd | [facebook/zstd](https://github.com/facebook/zstd) | GitHub Releases | 全部版本 |
-| openssl | [openssl/openssl](https://github.com/openssl/openssl) | GitHub Releases | 近 2 年（历史全量超过 10GB，不可行） |
-| fio | [axboe/fio](https://github.com/axboe/fio) | [官方源码站](https://brick.kernel.dk/snaps/) | 近 3 年约 45 个版本（历史全量约 1.5GB；GitHub Releases 只有 Windows 安装包） |
+| openssl | [openssl/openssl](https://github.com/openssl/openssl) | GitHub Releases | 全部稳定版本（257 个，约 2.5GB；预发布版不收） |
+| fio | [axboe/fio](https://github.com/axboe/fio) | [官方源码站](https://brick.kernel.dk/snaps/) | 全部 212 个版本（GitHub Releases 只有 Windows 安装包） |
 | iperf3 | [esnet/iperf](https://github.com/esnet/iperf) | GitHub Releases | 全部版本 |
-| nexttrace-tiny | [nxtrace/NTrace-core](https://github.com/nxtrace/NTrace-core) | GitHub Releases | 近 2 年，仅 `nexttrace-tiny_*` 变体（每个 release 全平台资产约 1.5GB） |
+| nexttrace-tiny | [nxtrace/NTrace-core](https://github.com/nxtrace/NTrace-core) | GitHub Releases | 全部含 `nexttrace-tiny_*` 变体的版本（tiny 于 2024-09 引入，仅收该变体） |
 | ping | [iputils/iputils](https://github.com/iputils/iputils) | GitHub Releases | 全部版本 |
-| npb（npb-ep / npb-ft） | [NASA NPB](https://www.nas.nasa.gov/software/npb.html) | 固定 URL 列表 | 已知 3.3.1 ~ 3.4.4 |
+| npb（npb-ep / npb-ft） | [NASA NPB](https://www.nas.nasa.gov/software/npb.html) | 固定 URL 列表 | NASA 现存 8 个 + 存档恢复 3 个（2.4.1/3.2.1/3.3，见 [npb/PROVENANCE.md](npb/PROVENANCE.md)），共 11 个 |
 | stream | [Virginia CS](https://www.cs.virginia.edu/stream/) | 固定 URL 列表 | 当前源码快照 |
 
-全局默认只收 Linux / FreeBSD 的 amd64、arm64、s390x、ppc64le。上游仓库过大时只收集近几年版本（`recent_years`）；调整范围请编辑 [config/tools.json](config/tools.json)（如删除某工具的 `recent_years` 即恢复全量收集）。
+全局默认只收 Linux / FreeBSD 的 amd64、arm64、s390x、ppc64le。所有工具均收集全量稳定版本（预发布版默认不收）；调整范围请编辑 [config/tools.json](config/tools.json)。
 
 ## 自动化
 

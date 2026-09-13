@@ -25,17 +25,13 @@
       "repo": "facebook/zstd"
     },
     "openssl": {
-      "repo": "openssl/openssl",
-      "version_glob": "^openssl-[3-9]\\.",
-      "recent_years": 2
+      "repo": "openssl/openssl"
     },
     "fio": {
       "type": "url_index",
       "index_url": "https://brick.kernel.dk/snaps/",
       "link_regex": "^fio-[0-9][0-9.]*\\.tar\\.gz$",
-      "version_regex": "^fio-([0-9][0-9.]*)\\.tar\\.gz$",
-      "keep_latest": 45,
-      "comment": "单个源码包约 7.4MB，历史全量约 1.5GB，故只收近三年（约 45 个版本）"
+      "version_regex": "^fio-([0-9][0-9.]*)\\.tar\\.gz$"
     },
     "iperf3": {
       "repo": "esnet/iperf"
@@ -43,7 +39,7 @@
     "nexttrace-tiny": {
       "repo": "nxtrace/NTrace-core",
       "asset_include": "^nexttrace-tiny_",
-      "recent_years": 2
+      "comment": "tiny 变体资产 2024-09 起才存在，更早 release 无可收集资产，天然全量"
     },
     "ping": {
       "repo": "iputils/iputils"

@@ -1,5 +1,5 @@
 {
-  "file_count": 557,
+  "file_count": 560,
   "files": {
     "fio/2.21/all/source/fio-2.21.tar.gz": {
       "arch": "all",
@@ -1332,6 +1332,17 @@
       "type": "source",
       "version": "2.3"
     },
+    "npb/2.4.1/all/source/NPB2.4.1.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T17:17:01Z",
+      "platform": "all",
+      "sha256": "59448aeee0641c1e08b8bb211c6d38e8e2cee29b17a2678e2f81b05997d2c137",
+      "size": 163983,
+      "source": "https://web.archive.org/web/20210319180612id_/https://nas.nasa.gov/assets/npb/NPB2.4.1.tar.gz",
+      "tool": "npb",
+      "type": "source",
+      "version": "2.4.1"
+    },
     "npb/3.0/all/source/NPB3.0.tar.gz": {
       "arch": "all",
       "fetched_at": "2026-09-13T16:46:18Z",
@@ -1343,6 +1354,17 @@
       "type": "source",
       "version": "3.0"
     },
+    "npb/3.2.1/all/source/NPB3.2.1.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T17:17:01Z",
+      "platform": "all",
+      "sha256": "6b663c7b9bb4dd5f14c50a27dd8b9207e97d0c4a300ef1ec6973a282bc777b38",
+      "size": 588328,
+      "source": "https://github.com/0intro/hare (sys/src/cmd/NPB3.2.1 @ main)",
+      "tool": "npb",
+      "type": "source",
+      "version": "3.2.1"
+    },
     "npb/3.3.1/all/source/NPB3.3.1.tar.gz": {
       "arch": "all",
       "fetched_at": "2026-09-13T15:29:45Z",
@@ -1353,6 +1375,17 @@
       "tool": "npb",
       "type": "source",
       "version": "3.3.1"
+    },
+    "npb/3.3/all/source/NPB3.3.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T17:17:01Z",
+      "platform": "all",
+      "sha256": "a4cb0c20382eeb329f20e6dc5b4fbf40b5bdf733d3a3431b8864e7b22b382674",
+      "size": 576500,
+      "source": "https://github.com/wzzhang-HIT/NAS-Parallel-Benchmark (master)",
+      "tool": "npb",
+      "type": "source",
+      "version": "3.3"
     },
     "npb/3.4.1/all/source/NPB3.4.1.tar.gz": {
       "arch": "all",
