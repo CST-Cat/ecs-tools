@@ -1,5 +1,5 @@
 {
-  "file_count": 555,
+  "file_count": 557,
   "files": {
     "fio/2.21/all/source/fio-2.21.tar.gz": {
       "arch": "all",
@@ -1320,6 +1320,28 @@
       "tool": "nexttrace-tiny",
       "type": "binary",
       "version": "v1.7.3"
+    },
+    "npb/2.3/all/source/NPB2.3.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T16:46:19Z",
+      "platform": "all",
+      "sha256": "83f9c473c4d27e594f089a7d8bae4f28c98c6072d735c9a9e732365f048b65f6",
+      "size": 275922,
+      "source": "https://www.nas.nasa.gov/assets/nas/npb/NPB2.3.tar.gz",
+      "tool": "npb",
+      "type": "source",
+      "version": "2.3"
+    },
+    "npb/3.0/all/source/NPB3.0.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T16:46:18Z",
+      "platform": "all",
+      "sha256": "68fd2c54abfead29a3c879a4989c79570cc6322653c7a5cfc8d7b7cc287227c2",
+      "size": 506748,
+      "source": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.0.tar.gz",
+      "tool": "npb",
+      "type": "source",
+      "version": "3.0"
     },
     "npb/3.3.1/all/source/NPB3.3.1.tar.gz": {
       "arch": "all",
@@ -6107,6 +6129,6 @@
       "version": "zstd-0.4.2"
     }
   },
-  "generated_at": "2026-09-13T16:38:03Z",
+  "generated_at": "2026-09-13T16:46:19Z",
   "schema": "ecs-tools.index/v1"
 }
