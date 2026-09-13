@@ -57,7 +57,9 @@
         { "version": "3.4.2", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.2.tar.gz" },
         { "version": "3.4.1", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.1.tar.gz" },
         { "version": "3.4", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.4.tar.gz" },
-        { "version": "3.3.1", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.3.1.tar.gz" }
+        { "version": "3.3.1", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.3.1.tar.gz" },
+        { "version": "3.0", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB3.0.tar.gz" },
+        { "version": "2.3", "url": "https://www.nas.nasa.gov/assets/nas/npb/NPB2.3.tar.gz" }
       ]
     },
     "stream": {
