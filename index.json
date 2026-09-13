@@ -1,5 +1,5 @@
 {
-  "file_count": 536,
+  "file_count": 544,
   "files": {
     "fio/2.21/all/source/fio-2.21.tar.gz": {
       "arch": "all",
@@ -793,6 +793,17 @@
       "type": "source",
       "version": "v1.5.0"
     },
+    "nexttrace-tiny/v1.6.1/all/source/NTrace-core-v1.6.1.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:30Z",
+      "platform": "all",
+      "sha256": "f4cefb90a5e1f475366940e91f481f180577ff2fb0ef29edd5d7457a7add64f2",
+      "size": 3139260,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.6.1",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.6.1"
+    },
     "nexttrace-tiny/v1.6.1/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
       "fetched_at": "2026-09-13T15:10:26Z",
@@ -836,6 +847,17 @@
       "tool": "nexttrace-tiny",
       "type": "binary",
       "version": "v1.6.1"
+    },
+    "nexttrace-tiny/v1.6.2/all/source/NTrace-core-v1.6.2.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:30Z",
+      "platform": "all",
+      "sha256": "1d65e38e7d555bc165dd2b2235fa076418f2adb5c4766a91f1f44ec083298f85",
+      "size": 3163958,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.6.2",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.6.2"
     },
     "nexttrace-tiny/v1.6.2/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
@@ -881,6 +903,17 @@
       "type": "binary",
       "version": "v1.6.2"
     },
+    "nexttrace-tiny/v1.6.4/all/source/NTrace-core-v1.6.4.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:30Z",
+      "platform": "all",
+      "sha256": "b4baacf2dbd30248325da9280c3f360ca1162ddd1e412cb8c78748dc4b9b245b",
+      "size": 3216344,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.6.4",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.6.4"
+    },
     "nexttrace-tiny/v1.6.4/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
       "fetched_at": "2026-09-13T15:10:32Z",
@@ -924,6 +957,17 @@
       "tool": "nexttrace-tiny",
       "type": "binary",
       "version": "v1.6.4"
+    },
+    "nexttrace-tiny/v1.6.5/all/source/NTrace-core-v1.6.5.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:31Z",
+      "platform": "all",
+      "sha256": "89d19dad8b85821818fcf0a1cc006841f1686859da1b1f5bac68957f3c81ce70",
+      "size": 3259034,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.6.5",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.6.5"
     },
     "nexttrace-tiny/v1.6.5/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
@@ -969,6 +1013,17 @@
       "type": "binary",
       "version": "v1.6.5"
     },
+    "nexttrace-tiny/v1.7.0/all/source/NTrace-core-v1.7.0.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:31Z",
+      "platform": "all",
+      "sha256": "76ccf68f24bee595e5d6f27f76098c3841b425549f740a3f961d2c44cf0baeec",
+      "size": 3291460,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.7.0",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.7.0"
+    },
     "nexttrace-tiny/v1.7.0/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
       "fetched_at": "2026-09-13T15:10:41Z",
@@ -1012,6 +1067,17 @@
       "tool": "nexttrace-tiny",
       "type": "binary",
       "version": "v1.7.0"
+    },
+    "nexttrace-tiny/v1.7.1/all/source/NTrace-core-v1.7.1.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:31Z",
+      "platform": "all",
+      "sha256": "ac5c3f4181b061b8fff2430e2b34eee165e7a8f41eb694a07ab0b4b219e5a4bb",
+      "size": 3293035,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.7.1",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.7.1"
     },
     "nexttrace-tiny/v1.7.1/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
@@ -1057,6 +1123,17 @@
       "type": "binary",
       "version": "v1.7.1"
     },
+    "nexttrace-tiny/v1.7.2/all/source/NTrace-core-v1.7.2.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:31Z",
+      "platform": "all",
+      "sha256": "e57b1884cede897cafbb2294c133193dc3db51e16771b6b2affab58c24e03507",
+      "size": 3345679,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.7.2",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.7.2"
+    },
     "nexttrace-tiny/v1.7.2/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
       "fetched_at": "2026-09-13T15:10:48Z",
@@ -1100,6 +1177,17 @@
       "tool": "nexttrace-tiny",
       "type": "binary",
       "version": "v1.7.2"
+    },
+    "nexttrace-tiny/v1.7.3/all/source/NTrace-core-v1.7.3.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-13T15:53:32Z",
+      "platform": "all",
+      "sha256": "b598e678dda47ac1c7d598bd39ac36089252ff773912abfdcb14ba3fffd2e1cf",
+      "size": 3384994,
+      "source": "https://codeload.github.com/nxtrace/NTrace-core/tar.gz/refs/tags/v1.7.3",
+      "tool": "nexttrace-tiny",
+      "type": "source",
+      "version": "v1.7.3"
     },
     "nexttrace-tiny/v1.7.3/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
       "arch": "amd64",
@@ -5898,6 +5986,6 @@
       "version": "zstd-0.4.2"
     }
   },
-  "generated_at": "2026-09-13T15:29:46Z",
+  "generated_at": "2026-09-13T15:53:32Z",
   "schema": "ecs-tools.index/v1"
 }
