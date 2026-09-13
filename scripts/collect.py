@@ -325,13 +325,15 @@ def collect_github_releases(http, tool, cfg, defaults, data_root, dry_run,
     for release in sorted(releases, key=lambda r: r.get("published_at") or ""):
         tag = release.get("tag_name", "")
         added = 0
-        added_main = 0  # source/binary/包类文件数；meta 不计入回退判断
+        has_main_asset = False  # 该 release 是否带有非 meta 资产（与是否已收集无关）
         for asset in release.get("assets") or []:
             fname = asset.get("name") or ""
             kept = asset_kept(fname, cfg, defaults)
             if not kept:
                 continue
             plat, arch, kind, slot = kept
+            if kind != "meta":
+                has_main_asset = True
             dest = data_root / tool / tag / slot / kind / fname
             try:
                 placed = place_file(http, cfg, defaults, dest,
@@ -344,9 +346,7 @@ def collect_github_releases(http, tool, cfg, defaults, data_root, dry_run,
                 continue
             if placed:
                 added += 1
-                if kind != "meta":
-                    added_main += 1
-        if added_main == 0 and fallback and tag:
+        if not has_main_asset and fallback and tag:
             # release 没有可用资产时回退下载 tag 源码包
             url = f"https://codeload.github.com/{repo}/tar.gz/refs/tags/{tag}"
             fname = f"{name}-{tag}.tar.gz"
