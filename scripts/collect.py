@@ -160,12 +160,28 @@ PLATFORM_TOKENS = [
 ARCH_PATTERNS = [
     (re.compile(r"(?:^|[^a-z0-9])(?:x86_64|amd64|x64)(?:[^a-z0-9]|$)"), "amd64"),
     (re.compile(r"(?:^|[^a-z0-9])(?:aarch64|arm64)(?:[^a-z0-9]|$)"), "arm64"),
-    (re.compile(r"(?:^|[^a-z0-9])(?:armv7|armhf)(?:[^a-z0-9]|$)"), "armv7"),
     (re.compile(r"(?:^|[^a-z0-9])(?:i[36]86|386|x86)(?:[^a-z0-9]|$)"), "386"),
     (re.compile(r"(?:^|[^a-z0-9])s390x(?:[^a-z0-9]|$)"), "s390x"),
     (re.compile(r"(?:^|[^a-z0-9])riscv64(?:[^a-z0-9]|$)"), "riscv64"),
-    (re.compile(r"(?:^|[^a-z0-9])ppc64le(?:[^a-z0-9]|$)"), "ppc64le"),
+    (re.compile(r"(?:^|[^a-z0-9])(?:ppc64le|powerpc64le)(?:[^a-z0-9]|$)"), "ppc64le"),
+    # 以下为已知但不收集的架构，识别出来以便被架构过滤器排除
+    (re.compile(r"(?:^|[^a-z0-9])loong(?:arch)?64(?:[^a-z0-9]|$)"), "loong64"),
+    (re.compile(r"(?:^|[^a-z0-9])mips(?:64)?(?:le)?(?:_softfloat)?(?:[^a-z0-9]|$)"), "mips"),
+    (re.compile(r"(?:^|[^a-z0-9])(?:ppc64|powerpc64)(?:[^a-z0-9]|$)"), "ppc64"),
+    (re.compile(r"(?:^|[^a-z0-9])(?:riscv128|sparc64|m68k|sh4|s390)(?:[^a-z0-9]|$)"), "other"),
 ]
+
+
+def classify_arch(name_lower):
+    m = re.search(r"(?:^|[^a-z0-9])armv([0-9]+)(?:[^a-z0-9]|$)", name_lower)
+    if m:
+        return f"armv{m.group(1)}"  # armv3~armv7 等，是否收集由架构过滤器决定
+    if re.search(r"(?:^|[^a-z0-9])armhf(?:[^a-z0-9]|$)", name_lower):
+        return "armv7"
+    for pattern, arch in ARCH_PATTERNS:
+        if pattern.search(name_lower):
+            return arch
+    return None
 
 SOURCE_EXTS = (".tar.gz", ".tgz", ".tar.xz", ".txz", ".tar.bz2", ".tbz2",
                ".tar.zst", ".tar", ".zip")
@@ -183,13 +199,6 @@ def classify_platform(name_lower):
     for token, plat in PLATFORM_TOKENS:
         if re.search(rf"(?:^|[^a-z]){token}(?:[^a-z]|$)", name_lower):
             return plat
-    return None
-
-
-def classify_arch(name_lower):
-    for pattern, arch in ARCH_PATTERNS:
-        if pattern.search(name_lower):
-            return arch
     return None
 
 
