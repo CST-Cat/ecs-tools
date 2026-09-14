@@ -2,6 +2,8 @@
 
 自动收集 [CST-Cat/ecs](https://github.com/CST-Cat/ecs)（上游项目）所需的全部第三方软件的各发布版本。由 GitHub Actions 定期运行 [scripts/collect.py](scripts/collect.py)，工具清单自动跟随上游 `tools/lock.json` 的变化。
 
+仅作备份使用
+
 > English: this repository automatically mirrors every published version of the
 > third-party software required by the upstream project
 > [CST-Cat/ecs](https://github.com/CST-Cat/ecs). Collection runs on a daily
