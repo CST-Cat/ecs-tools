@@ -1,5 +1,5 @@
 {
-  "file_count": 1687,
+  "file_count": 1688,
   "files": {
     "fio/1.0/all/source/fio-1.0.tar.gz": {
       "arch": "all",
@@ -2266,6 +2266,17 @@
       "tool": "fio",
       "type": "source",
       "version": "3.42"
+    },
+    "fio/3.43/all/source/fio-3.43.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-09-24T07:40:57Z",
+      "platform": "all",
+      "sha256": "6f57893c7a73d9ed72e9e2b6e15f136a99c137bd6a7645fdeeb4a40b3e9da78d",
+      "size": 8117085,
+      "source": "https://brick.kernel.dk/snaps/fio-3.43.tar.gz",
+      "tool": "fio",
+      "type": "source",
+      "version": "3.43"
     },
     "fio/3.5/all/source/fio-3.5.tar.gz": {
       "arch": "all",
@@ -18559,6 +18570,6 @@
       "version": "zstd-0.4.2"
     }
   },
-  "generated_at": "2026-09-23T07:52:11Z",
+  "generated_at": "2026-09-24T07:40:59Z",
   "schema": "ecs-tools.index/v1"
 }
