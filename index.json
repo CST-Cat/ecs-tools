@@ -1,5 +1,5 @@
 {
-  "file_count": 1712,
+  "file_count": 1716,
   "files": {
     "fio/1.0/all/source/fio-1.0.tar.gz": {
       "arch": "all",
@@ -16182,6 +16182,50 @@
       "type": "source",
       "version": "openssl-4.0.3"
     },
+    "openssl/openssl-4.1.0/all/meta/openssl-4.1.0.tar.gz.asc": {
+      "arch": "all",
+      "fetched_at": "2026-10-24T07:25:33Z",
+      "platform": "all",
+      "sha256": "d66bbf4cb7810c1c3dcab2aa29b824c9f3793cd28288e7aa698ef848c0e6db33",
+      "size": 931,
+      "source": "https://github.com/openssl/openssl/releases/download/openssl-4.1.0/openssl-4.1.0.tar.gz.asc",
+      "tool": "openssl",
+      "type": "meta",
+      "version": "openssl-4.1.0"
+    },
+    "openssl/openssl-4.1.0/all/meta/openssl-4.1.0.tar.gz.sha1": {
+      "arch": "all",
+      "fetched_at": "2026-10-24T07:25:33Z",
+      "platform": "all",
+      "sha256": "23f8d5abbadfca2f01d3d76a1e5dfc29e6aff809363aebe3b133bed3f6c650a3",
+      "size": 63,
+      "source": "https://github.com/openssl/openssl/releases/download/openssl-4.1.0/openssl-4.1.0.tar.gz.sha1",
+      "tool": "openssl",
+      "type": "meta",
+      "version": "openssl-4.1.0"
+    },
+    "openssl/openssl-4.1.0/all/meta/openssl-4.1.0.tar.gz.sha256": {
+      "arch": "all",
+      "fetched_at": "2026-10-24T07:25:33Z",
+      "platform": "all",
+      "sha256": "8305ea87f3cf009165928a27745094d2fbab68ba53e2b2dc00faae541e05fe66",
+      "size": 87,
+      "source": "https://github.com/openssl/openssl/releases/download/openssl-4.1.0/openssl-4.1.0.tar.gz.sha256",
+      "tool": "openssl",
+      "type": "meta",
+      "version": "openssl-4.1.0"
+    },
+    "openssl/openssl-4.1.0/all/source/openssl-4.1.0.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-10-24T07:25:33Z",
+      "platform": "all",
+      "sha256": "50c17baf54cb008f6ce42d50deb4b28050a1aad711636cabd4b241c7e90cc2fd",
+      "size": 55738000,
+      "source": "https://github.com/openssl/openssl/releases/download/openssl-4.1.0/openssl-4.1.0.tar.gz",
+      "tool": "openssl",
+      "type": "source",
+      "version": "openssl-4.1.0"
+    },
     "ping/20210202/all/meta/20210202.tar.gz.asc": {
       "arch": "all",
       "fetched_at": "2026-09-13T15:10:58Z",
@@ -18834,6 +18878,6 @@
       "version": "zstd-0.4.2"
     }
   },
-  "generated_at": "2026-10-23T07:43:11Z",
+  "generated_at": "2026-10-24T07:26:06Z",
   "schema": "ecs-tools.index/v1"
 }
