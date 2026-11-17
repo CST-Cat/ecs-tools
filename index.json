@@ -1,5 +1,5 @@
 {
-  "file_count": 1722,
+  "file_count": 1728,
   "files": {
     "fio/1.0/all/source/fio-1.0.tar.gz": {
       "arch": "all",
@@ -4103,6 +4103,72 @@
       "tool": "nexttrace-tiny",
       "type": "binary",
       "version": "v1.7.5"
+    },
+    "nexttrace-tiny/v1.7.6/freebsd-amd64/binary/nexttrace-tiny_freebsd_amd64": {
+      "arch": "amd64",
+      "fetched_at": "2026-11-17T10:51:21Z",
+      "platform": "freebsd",
+      "sha256": "9999cd549ec7d8bebbf3954e3441e5a3ff0e4747227429a31e793d2b8cfddc55",
+      "size": 14729386,
+      "source": "https://github.com/nxtrace/NTrace-core/releases/download/v1.7.6/nexttrace-tiny_freebsd_amd64",
+      "tool": "nexttrace-tiny",
+      "type": "binary",
+      "version": "v1.7.6"
+    },
+    "nexttrace-tiny/v1.7.6/freebsd-arm64/binary/nexttrace-tiny_freebsd_arm64": {
+      "arch": "arm64",
+      "fetched_at": "2026-11-17T10:51:22Z",
+      "platform": "freebsd",
+      "sha256": "b5aa139f5e2de068ad2d41054950dd298aecbfa7f7e9dc1c30d6524b39cf8bf7",
+      "size": 13697194,
+      "source": "https://github.com/nxtrace/NTrace-core/releases/download/v1.7.6/nexttrace-tiny_freebsd_arm64",
+      "tool": "nexttrace-tiny",
+      "type": "binary",
+      "version": "v1.7.6"
+    },
+    "nexttrace-tiny/v1.7.6/linux-amd64/binary/nexttrace-tiny_linux_amd64": {
+      "arch": "amd64",
+      "fetched_at": "2026-11-17T10:51:22Z",
+      "platform": "linux",
+      "sha256": "9f219ba91318a3e1534bd28c661ef8019da42825ed48257035c508962d007271",
+      "size": 5865056,
+      "source": "https://github.com/nxtrace/NTrace-core/releases/download/v1.7.6/nexttrace-tiny_linux_amd64",
+      "tool": "nexttrace-tiny",
+      "type": "binary",
+      "version": "v1.7.6"
+    },
+    "nexttrace-tiny/v1.7.6/linux-arm64/binary/nexttrace-tiny_linux_arm64": {
+      "arch": "arm64",
+      "fetched_at": "2026-11-17T10:51:22Z",
+      "platform": "linux",
+      "sha256": "aeab456e2f8aebd62cd1dd2d6458d2ec57b38f5d707e196bab41f999ff898810",
+      "size": 5113356,
+      "source": "https://github.com/nxtrace/NTrace-core/releases/download/v1.7.6/nexttrace-tiny_linux_arm64",
+      "tool": "nexttrace-tiny",
+      "type": "binary",
+      "version": "v1.7.6"
+    },
+    "nexttrace-tiny/v1.7.6/linux-ppc64le/binary/nexttrace-tiny_linux_ppc64le": {
+      "arch": "ppc64le",
+      "fetched_at": "2026-11-17T10:51:23Z",
+      "platform": "linux",
+      "sha256": "eb99c0849f79ca7afe8e3f0f1b23b474c54bf9a0aadb573021358adb121ae9ec",
+      "size": 14418080,
+      "source": "https://github.com/nxtrace/NTrace-core/releases/download/v1.7.6/nexttrace-tiny_linux_ppc64le",
+      "tool": "nexttrace-tiny",
+      "type": "binary",
+      "version": "v1.7.6"
+    },
+    "nexttrace-tiny/v1.7.6/linux-s390x/binary/nexttrace-tiny_linux_s390x": {
+      "arch": "s390x",
+      "fetched_at": "2026-11-17T10:51:23Z",
+      "platform": "linux",
+      "sha256": "04616c7e7b686cc6171b78e1fd4e8666c8fd4f3dd7191ae273eb1f153ec8463e",
+      "size": 15073440,
+      "source": "https://github.com/nxtrace/NTrace-core/releases/download/v1.7.6/nexttrace-tiny_linux_s390x",
+      "tool": "nexttrace-tiny",
+      "type": "binary",
+      "version": "v1.7.6"
     },
     "npb/2.3/all/source/NPB2.3.tar.gz": {
       "arch": "all",
@@ -18944,6 +19010,6 @@
       "version": "zstd-0.4.2"
     }
   },
-  "generated_at": "2026-11-05T09:43:29Z",
+  "generated_at": "2026-11-17T10:51:24Z",
   "schema": "ecs-tools.index/v1"
 }
