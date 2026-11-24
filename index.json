@@ -1,5 +1,5 @@
 {
-  "file_count": 1730,
+  "file_count": 1737,
   "files": {
     "fio/1.0/all/source/fio-1.0.tar.gz": {
       "arch": "all",
@@ -18866,6 +18866,83 @@
       "type": "source",
       "version": "v1.5.7"
     },
+    "zstd/v1.6.0/all/meta/zstd-1.6.0.tar.gz.sha256": {
+      "arch": "all",
+      "fetched_at": "2026-11-24T12:38:58Z",
+      "platform": "all",
+      "sha256": "62584254d5a177a9b0d0d83c3f42891afaa0eab2e155aebbe957953385348cad",
+      "size": 84,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.gz.sha256",
+      "tool": "zstd",
+      "type": "meta",
+      "version": "v1.6.0"
+    },
+    "zstd/v1.6.0/all/meta/zstd-1.6.0.tar.gz.sig": {
+      "arch": "all",
+      "fetched_at": "2026-11-24T12:38:58Z",
+      "platform": "all",
+      "sha256": "cb0c87a42a3d256ea20790e21233807e51b806d18f2b43d92e43220555b50585",
+      "size": 858,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.gz.sig",
+      "tool": "zstd",
+      "type": "meta",
+      "version": "v1.6.0"
+    },
+    "zstd/v1.6.0/all/meta/zstd-1.6.0.tar.zst.sha256": {
+      "arch": "all",
+      "fetched_at": "2026-11-24T12:38:58Z",
+      "platform": "all",
+      "sha256": "831d7341bd13af4cdbdc8341b3f6bf81b0c636fc4322e713cac7b34fb3d117b3",
+      "size": 85,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.zst.sha256",
+      "tool": "zstd",
+      "type": "meta",
+      "version": "v1.6.0"
+    },
+    "zstd/v1.6.0/all/meta/zstd-1.6.0.tar.zst.sig": {
+      "arch": "all",
+      "fetched_at": "2026-11-24T12:38:58Z",
+      "platform": "all",
+      "sha256": "fb618ab531abceafe80eaa00f7a44de48c6a7d8dc2c134d298590f29d71c861d",
+      "size": 858,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.zst.sig",
+      "tool": "zstd",
+      "type": "meta",
+      "version": "v1.6.0"
+    },
+    "zstd/v1.6.0/all/source/zstd-1.6.0.tar.gz": {
+      "arch": "all",
+      "fetched_at": "2026-11-24T12:38:58Z",
+      "platform": "all",
+      "sha256": "2ba599ae2a257976278e7e71e998433a387bfd18aa7b78678229fd5d84f5e9b8",
+      "size": 2564432,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.gz",
+      "tool": "zstd",
+      "type": "source",
+      "version": "v1.6.0"
+    },
+    "zstd/v1.6.0/all/source/zstd-1.6.0.tar.zst": {
+      "arch": "all",
+      "fetched_at": "2026-11-24T12:38:58Z",
+      "platform": "all",
+      "sha256": "2ca30d45c7a61f255e17024373f7fe75b6403b2ade6b21220c1472964d8a466a",
+      "size": 1962795,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.zst",
+      "tool": "zstd",
+      "type": "source",
+      "version": "v1.6.0"
+    },
+    "zstd/v1.6.0/linux-arm64/source/zstd-v1.6.0-win-arm64.zip": {
+      "arch": "arm64",
+      "fetched_at": "2026-11-24T12:38:59Z",
+      "platform": "linux",
+      "sha256": "e9c300262f6c37a7540713c99f032a6b85b6899b52d5c1ca785c1cfd8759b510",
+      "size": 1249428,
+      "source": "https://github.com/meta/zstd/releases/download/v1.6.0/zstd-v1.6.0-win-arm64.zip",
+      "tool": "zstd",
+      "type": "source",
+      "version": "v1.6.0"
+    },
     "zstd/zstd-0.1.2/all/source/zstd-zstd-0.1.2.tar.gz": {
       "arch": "all",
       "fetched_at": "2026-09-13T15:08:59Z",
@@ -19032,6 +19109,6 @@
       "version": "zstd-0.4.2"
     }
   },
-  "generated_at": "2026-11-23T11:01:01Z",
+  "generated_at": "2026-11-24T12:39:05Z",
   "schema": "ecs-tools.index/v1"
 }
